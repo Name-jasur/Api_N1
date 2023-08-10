@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="POST">
+
+  {% csrf_token %}
+  <input type="text" name="url_val" title="input_val">
+  <input type="submit" value="Shorten">
+
+</form>
+{% if result %}
+  <code>{{result}}</code>
+{%endif%}
+
+</body>
+</html>
